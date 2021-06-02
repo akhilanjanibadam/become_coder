@@ -482,3 +482,240 @@ for i in range(1,num+1):
         print(i,end='')
     print()
 '''
+
+'''
+def total_marks(n,data):
+    res=0
+    for i in data:
+        res+=i
+        return res
+
+n=int(input())
+data=list(map(int,input().split())
+total=total_marks(n,data)
+          print(total)
+'''
+'''
+def evenodd(n,data):
+    ec,oc=0,0
+    for i in data:
+        if i%2==0:
+            ec+=1
+        else:
+            oc+=1
+    return ec,oc
+n=int(input())
+data=list(map(int,input().split()))
+total=evenodd(n,data)
+print(*total)
+##for i in total
+##print(total,end=" ")
+'''
+'''
+import math as m
+def isprime(n):
+    s=int(m,sqrt(n))
+    for i in range(2,s+1):
+        if n%i==0:
+            return 0
+    return 1
+def countprime(n,data):
+    pc=0
+    for i in data:
+        if isprime(i):
+            pc+=1
+    return pc
+n=int(input())
+data=list(map(int,input().split()))
+pc=countPrimes(n,data)
+print(pc)
+'''
+'''
+import math as m
+def isprime(n):
+    if num==1:
+        return 0
+    s=int(m.sqrt(n))
+    for i in range(2,s+1):
+        if n%i==0:
+            return 0
+    return 1
+def findPrimes(n,data):
+    m=[]
+    for i in data:
+        if isprime(i):
+            m.append(i)
+    return m
+n=int(input())
+data=list(map(int,input().split()))
+primes=findPrime(n,data)
+print(*prime)
+'''
+'''
+import math as m
+def isprime(n):
+    if num==1:
+        return 0
+    s=int(m.sqrt(n))
+    for i in range(2,s+1):
+        if n%i==0:
+            return 0
+    return 1
+def findPrimes(n,data):
+    prime=[]
+    nonprimes=[]
+    for i in data:
+        if isprime(i):
+            prime.append(i)
+        else:
+            nonprimes.append(i)
+    return prime,nonprimes
+n=int(input())
+data=list(map(int,input().split()))
+primes,nonprimes=findPrimes(n,data)
+print(*primes)
+print(*nonprimes)
+
+'''
+'''
+def sum(n):
+    s=0
+    while True:
+        r=n%10
+        n=n//10
+        s=s+r
+    return s
+
+def sumofdigits(n,data):
+    for i in range(len(data)):
+        data[i]=sum(data[i])
+n=int(input())
+data=list(map(int,input().split()))
+sumofdigits=findPrime(n,data)
+print(*data)
+'''
+
+
+#reverse of a number in list
+#count of palindromes in list
+
+'''
+import math
+def reverse(n):
+    s=0
+    while True:
+        r=n%10
+        n=n//10
+        s=s*10+r
+    return s
+def sumofdigits(n,data):
+    for i in range(len(data)):
+        data[i]=sum(data[i])
+    return data
+n=int(input())
+data=list(map(int,input().split()))
+sumofdigits(n,data)
+print(*data)
+'''
+
+'''
+import math
+def palindrome(n):
+    m=n
+    s=0
+    while True:
+        r=n%10
+        n=n//10
+        s=s*10+r
+    return s==m
+def sumofdigits(n,data):
+    c=0
+    for i in range(len(data)):
+        if palindrome(data[i]):
+            c+=1
+    return c
+n=int(input())
+data=list(map(int,input().split()))
+sumofdigits(n,data)
+print(*data)
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
